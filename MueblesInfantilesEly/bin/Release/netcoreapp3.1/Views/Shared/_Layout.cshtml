@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MueblesInfantilesEly</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <style>
+        .float-wsp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+            .float-wsp:hover {
+                text-decoration: none;
+                color: #25d366;
+                background-color: #fff;
+            }
+
+        .my-float-wsp {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <a href="https://api.whatsapp.com/send?phone=56974082405&text=Hola!,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20mueble%20(categoria)%20y%20(indique%20n%C2%B0)" class="float-wsp" target="_blank">
+        <i class="fab fa-whatsapp my-float-wsp"></i>
+    </a>
+
+    @RenderBody()
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - MueblesInfantilesEly
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+    <script src="~/js/site.js"></script>
+    <script src="~/js/scripts.js"></script>
+</body>
+</html>
